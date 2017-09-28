@@ -1,39 +1,33 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Final Project, Part 1: Lightning Talk
-
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project #1: Research Design Write-Up
+DS | Unit Project 1
 
 ### PROMPT
 
-In the field of data science, projects are practical. A good project is manageable and relates to your working domain; however, it can be hard to filter and scope good ideas when you're new to a field. That's where Part 1 of your final project comes in. 
+"A problem well-stated is half-solved" -- Charles Kettering
 
-One of the best ways to test expectations and get feedback is to share your ideas with others. For part one of your final project, you'll come up with a few different ideas you could potentially solve with data, then present them in small groups to the class.
+Welcome to Data Science! In this first project you will create a framework to scope out data science projects. This framework will provide you with a guide to develop a well-articulated problem statement and analysis plan that will be robust and reproducible.
 
-You'll get the opportunity to get immediate feedback and guidance in order to help you choose an awesome final project idea. Keep in mind that it's important to run though this ideation process a few times with different ideas to clarify what your project should focus on. 
-
-**Goal**: Prepare a one-minute lightning talk that covers 3 potential project topics.
+**Goal:** Create a structured iPython notebook using markup
 
 ---
 
 ### DELIVERABLES
 
-#### Lightning Presentation
+#### Completed iPython Notebook
 
-- **Requirements:** You should present from a prepared deck that explains the following:
-    * ___The Problem___: What's the background and scope of the project idea? What problem are you attempting to address or solve? Who may it matter to?
-    * ___Data___: What data exists to help solve this problem? Where is it coming from? What does the data look like? What is the observation?
-    * ___Hypotheses___: Given the problem and data you're aware of, what do you believe is the solution? What does success look like?
-
-- **Detailed Breakdown:** Your presentation must:
-    * Explain three potential projects, including: a problem statement, a hypothesis, and potential data sets
-    * Be 2-3 minutes in duration
-    * Demonstrate familiarity with the domain of the data
+- **Requirements:**
+    - Identify features of the dataset, including the outcome and covariates/predictors
+    - Create a data dictionary with classification of available variables
+    - Write a high quality problem statement
+    - State the risks and assumptions of your data
+    - Outline exploratory analysis methods
 
 - **Bonus:**
-    - High level data points can help show the "improvement" scope that's available
-    - Cite similar/previous work that will better inform your strategy that can be taken
+    - Practice writing an alternative problem statement for your dataset
+    - Articulate the risks and assumptions of this alternative model
 
-- **Submission:**	
-    * Present materials in class
-    * Submit presentation to instructor via email.
+- **Submission:**
+    - TBD by Instructor 
 
 ---
 
@@ -41,11 +35,7 @@ You'll get the opportunity to get immediate feedback and guidance in order to he
 
 | Deadline | Deliverable| Description |
 |:-:|---|---|
-| Lesson 7 |  Part 1 - Lightning Presentation  | Present 3 Problem Statements   |
-| Lesson 11 | Part 2 - Experiment Writeup  |  Research Design Problem Statement & Outline   |
-| Lesson 14 | Part 3 - Exploratory Analysis  | Dataset Approval and Exploratory Analysis   |
-| Lesson 17 | Part 4 - Notebook Draft  |  iPython Notebook & Model Draft  |
-| Lesson 19 | Part 5 - Presentation  | Present Your Final Report   |
+| Lesson 3 | Project 1  | Research Design Write-Up   |
 
 ---
 
@@ -55,7 +45,7 @@ Your project will be assessed using the following standards:
 
 1. Identify the Problem
 
-#### Rubric: [Click here for the complete rubric](./final-project-1-rubric.md).
+#### Rubric: [Click here for the complete rubric](./project1-rubric.md). 
 
 Requirements for these standards will be assessed using the scale below:
 
@@ -66,19 +56,42 @@ Requirements for these standards will be assessed using the scale below:
     **2** | _Meets expectations, good job!_
     **3** | _Exceeds expectations, you wonderful creature, you!_
 
-While your total score may serve as a helpful gauge of whether you've met project goals, __specific standards scores are more important__ since they can show you where to focus your efforts in the future!
+While your total score is a helpful gauge of whether you've met overall project goals, __specific scores are more important__ since they'll show you where to focus your efforts in the future!
 
 ---
 
 ### RESOURCES
 
-#### Suggestions for Getting Started
+#### Dataset  
+We'll be using the same dataset as UCLA's Logistic Regression in R tutorial to explore logistic regression in Python, as explained in [yhat's blog](http://blog.yhat.com/posts/logistic-regression-and-python.html). This is an excellent resource for using logistic regression and summary statistics to explore a relevant dataset. Our goal will be to identify the various factors that may influence admission into graduate school. It contains four variables- admit, gre, gpa, rank.
 
-- Try putting together a three-slide deck for each of your project ideas, in order to stay organized.
-- Look for example (or real) data to get a feel for what information exists that you can use.
-- Think about how much time you can dedicate to the project each week, and where you think the largest challenges will lie.
-- Think about this as an elevator pitch: be prepared, do some light research, but don't go down any "rabbit holes".
+- 'admit' is a binary variable. It indicates whether or not a candidate was admitted admit =1) our not (admit= 0)
+- 'gre' is GRE score
+- 'gpa' stands for Grade Point Average
+- 'rank' is the rank of an applicant's undergraduate alma mater, with 1 being the highest and 4 as the lowest
 
-#### Additional Links
+Dataset: [Admissions.csv](./assets/admissions.csv)
 
-- For overall project ideas, consider looking at former [General Assembly Data Science Projects](https://gallery.generalassemb.ly/DS?metro=)
+#### Starter code
+For this project we will be using an iPython notebook. Notebooks are a handy way to communicate your research with your team and share your analysis. Using markup syntax will allow you create more visually appealing notebooks.
+
+* Open the [starter code instructions](./starter-code/project1-starter.ipynb) in iPython notebook.
+
+#### Sample Deliverables 
+Check out the example notebook in our starter code, which includes a data dictionary and responses to questions. Wonder how to format your notebook the same way? Simply double-click on any section to view the markdown.
+
+![Example Notebook](./assets/images/Example_ipynb.jpg)
+
+#### Suggestions for Getting Started 
+
+- Get used to the iPython Notebook layout. Play around with keyboard shortcuts.
+- Try out basic markdown for commonly used formats; look up commands for headers, bold, italic, tables.
+- **Read the docs for iPython Notebooks.** Most of the time, there is a tutorial that you can follow, but not always, and learning to read documentation is crucial to your success as a data scientist!
+
+### Additional Links
+
+- [iPython Notebook Shortcuts](https://ipython.org/ipython-doc/1/interactive/notebook.html#keyboard-shortcuts)
+- [Markdown Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+- [iPython Notebook Docs](http://ipython.readthedocs.org/en/stable/)
+
+---
