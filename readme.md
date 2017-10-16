@@ -1,33 +1,28 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project #1: Research Design Write-Up
-DS | Unit Project 1
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project #3: Modeling Assignment
+DS | Unit Project 2
 
 ### PROMPT
 
-"A problem well-stated is half-solved" -- Charles Kettering
+In this project, you will perform a logistic regression on the admissions data we've been working with in projects 1 and 2. For more instructions, follow the questions included in the starter code.
 
-Welcome to Data Science! In this first project you will create a framework to scope out data science projects. This framework will provide you with a guide to develop a well-articulated problem statement and analysis plan that will be robust and reproducible.
-
-**Goal:** Create a structured iPython notebook using markup
+**Goal:** Completed iPython notebook that includes basic modeling using logistic regression
 
 ---
 
 ### DELIVERABLES
 
-#### Completed iPython Notebook
-
 - **Requirements:**
-    - Identify features of the dataset, including the outcome and covariates/predictors
-    - Create a data dictionary with classification of available variables
-    - Write a high quality problem statement
-    - State the risks and assumptions of your data
-    - Outline exploratory analysis methods
+    - Create dummy variables
+    - Calculate OR by hand
+    - Complete a logistic regression using stats models and interpret your findings
+    - Calculate predicted probabilities
 
-- **Bonus:**
-    - Practice writing an alternative problem statement for your dataset
-    - Articulate the risks and assumptions of this alternative model
+- **Bonus:** 
+    - Plot the predicted probabilities
+    - Brainstorm ways to improve your analysis
 
 - **Submission:**
-    - TBD by Instructor 
+    - TBD by Instructor
 
 ---
 
@@ -35,7 +30,7 @@ Welcome to Data Science! In this first project you will create a framework to sc
 
 | Deadline | Deliverable| Description |
 |:-:|---|---|
-| Lesson 3 | Project 1  | Research Design Write-Up   |
+| Lesson 9 | Project 2  | Basic Modeling Assignment  |
 
 ---
 
@@ -43,9 +38,9 @@ Welcome to Data Science! In this first project you will create a framework to sc
 
 Your project will be assessed using the following standards:
 
-1. Identify the Problem
+1. Refine the Data
 
-#### Rubric: [Click here for the complete rubric](./project1-rubric.md). 
+#### Rubric: [Click here for the complete rubric](./project2-rubric.md). 
 
 Requirements for these standards will be assessed using the scale below:
 
@@ -73,25 +68,13 @@ We'll be using the same dataset as UCLA's Logistic Regression in R tutorial to e
 Dataset: [Admissions.csv](./assets/admissions.csv)
 
 #### Starter code
-For this project we will be using an iPython notebook. Notebooks are a handy way to communicate your research with your team and share your analysis. Using markup syntax will allow you create more visually appealing notebooks.
+Review the questions in the [iPython Notebook](./starter-code/project2-starter.ipynb) provided.
 
-* Open the [starter code instructions](./starter-code/project1-starter.ipynb) in iPython notebook.
+#### Suggestions for Getting Started
+- Review logistic regression, odds ratios and probabilities from prior lessons.
+- **Read the docs for Stats models.** Most of the time, there is a tutorial that you can follow, but not always, and learning to read documentation is crucial to your success as a data scientist!
 
-#### Sample Deliverables 
-Check out the example notebook in our starter code, which includes a data dictionary and responses to questions. Wonder how to format your notebook the same way? Simply double-click on any section to view the markdown.
-
-![Example Notebook](./assets/images/Example_ipynb.jpg)
-
-#### Suggestions for Getting Started 
-
-- Get used to the iPython Notebook layout. Play around with keyboard shortcuts.
-- Try out basic markdown for commonly used formats; look up commands for headers, bold, italic, tables.
-- **Read the docs for iPython Notebooks.** Most of the time, there is a tutorial that you can follow, but not always, and learning to read documentation is crucial to your success as a data scientist!
-
-### Additional Links
-
-- [iPython Notebook Shortcuts](https://ipython.org/ipython-doc/1/interactive/notebook.html#keyboard-shortcuts)
-- [Markdown Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-- [iPython Notebook Docs](http://ipython.readthedocs.org/en/stable/)
+#### Additional Links
+- [Stats Models Docs](http://statsmodels.sourceforge.net/)
 
 ---
