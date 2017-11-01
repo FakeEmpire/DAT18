@@ -1,34 +1,40 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Final Project, Part 2: Project Design Writeup
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Final Project, Part 3: Exploratory Data Analysis
 
 ### PROMPT
 
-Project outlines are a valuable resource when working with data projects, as they help keep your project organized.  A well constructed outline can clarify your goals and serve as a checklist when conducting research and analysis.
+Exploratory data analysis is a crucial and informative step in the data process. It helps confirm or deny your initial hypotheses and helps visualize the relationships among your data. Your exploratory analysis also informs the kinds of data transformations that you'll need to optimize for machine learning models.
 
-For this project, you will need to complete a problem statement and research design outline for one of the three lightning talks you designed during pt. 1. This will serve as the starting point for your analysis. Make sure to include a specific aim and hypthesis, well-defined risks and assumptions, and clearly articulated goals and success metrics. 
+In this assignment, you will explore and visualize your initial analysis in order to effectively tell your data's story. You'll create an iPython notebook that explores your data mathematically, using a python visualization package.
 
-Remember, completing this task earlier will give you more chances to iterate and improve!
 
-**Goal:** Create an outline of your research design approach, including hypothesis, assumptions, goals, and success metrics.
+**Goal:** Confirm your data and create an exploratory analysis notebook with stat analysis and visualization.
+
 ---
 
 ### DELIVERABLES
 
-#### Project Design Writeup
+#### Exploratory Analysis Writeup
 
 - **Requirements:**
-    - Well-articulated problem statement with "specific aim" and hypothesis, based on your lightning talk
-    - An outline of any potential methods and models
-    - Detailed explanation of extant data available (ie: build a data dictionary or link to pre-built data dictionaries)
-    - Describe any outstanding questions, assumptions, risks, caveats
-    - Demonstrate domain knowledge, including specific features or relevant benchmarks from similar projects 
-    - Define your goals and criteria, in order to explain what success looks like
+   * Review the data set and project with an EIR during office hours.
+   * Practice importing (potentially unformatted) data into clean matrices|data frames, and if necessary, export into a form that makes sense (text files or a database, for example).
+   * Explore the mathematical properties and visualize data through a python visualization tool (matplotlib and seaborn)
+   * Provide insight about the data set and any impact on a hypothesis.
+
+- **Detailed Breakdown:**
+   * A well organized iPython notebook with code and output
+   * At least one visual for each independent variable and, if possible, its relationship to your dependent variable.
+      * It's just as important to show what's not correlated as it is to show any actual correlations found.
+      * Visuals should be well labeled and intuitive based on the data types.
+        * For example, if your X variable is temperature and Y is "did it rain," a reasonable visual would be two histograms of temperature, one where it rained, and one where it didn't.
+      * Tables are a perfectly valid visualization tool! Interweave them into your work.
 
 - **Bonus:**
-    - Consider alternative hypotheses: if your project is a regression problem, is it possible to rewrite it as a classification problem?
-    - "Convert" your goal metric from a statistical one (like Mean Squared Error) and tie it to something non-data people can understand, like a cost/benefit analysis, etc.
+   - Surface and share your analysis online. Jupyter makes this very simple and the setup should not take long.
+   - Try experimenting with other visualization languages; python/pandas-highcharts, shiny/r, or for a real challenge, d3 on its own. Interactive data analysis opens the doors for others to easily interpret your work and explore the data themselves!
 
-- **Submission:**	 
-  - TBD by instructor. 
+- **Submission:**
+   - TBD by instructor.
 
 ---
 
@@ -45,12 +51,11 @@ Remember, completing this task earlier will give you more chances to iterate and
 ---
 
 ### EVALUATION
-
 Your project will be assessed using the following standards:
 
-1. Identify the Problem
+1. Parse the Data
 
-#### Rubric: [Click here for the complete rubric](./final-project-2-rubric.md).
+#### Rubric: [Click here for the complete rubric](./final-project-3-rubric.md).
 
 Requirements for these standards will be assessed using the scale below:
 
@@ -61,24 +66,21 @@ Requirements for these standards will be assessed using the scale below:
     **2** | _Meets expectations, good job!_
     **3** | _Exceeds expectations, you wonderful creature, you!_
 
-While your total score is a helpful gauge of whether you've met overall project goals, __specific scores are more important__ since they'll show you where to focus your efforts in the future!
+While your total score may serve as a helpful gauge of whether you've met project goals, __specific standards scores are more important__ since they can show you where to focus your efforts in the future!
 
 ---
 
 ### RESOURCES
 
-#### Starter Code
-
-- Please use the [template](./project-design-template.md) provided.
-
 #### Suggestions for Getting Started
 
-- The more time you spend researching, the less time you'll likely spend writing; this is a positive sign!
-- While researching, keep track of all of your resources. Make sure they're trustworthy.
-- If you've seen similar work online, see if you can find the code that implemented the data munging. It might come in handy!
-- If your project requires using an API, make sure you can get access to it. Not everyone gives away API keys immediately, and you don't want to be caught with no data with one week left to work!
+- Keep the project simple! The "cool" part of the analysis will come; just looking at simple relationships between variables can be incredibly insightful.
+- Consider building some helper functions that help you quickly visualize and interpret data.
+   - Exploratory data analysis should be formulaic; the code should not be holding you back. There are plenty of "starter code" examples from class materials.
+- **DRY:** Don't Repeat Yourself! If you see yourself copy and pasting code a lot, turn it into a function, and use the function instead!
 
 #### Specific Tips
 
-- Provide a sense of depth and scale to the project, which can be used to guide where the majority of your time should be spent working on the project.
-- Show a clear connection between the datasets and the problem presented. The project should avoid working with independent variables (or features) that would not ordinarily be available in order to predict your target.
+- This deliverable should be similar to the work you did for Unit Project 2 earlier in the course.
+
+---
